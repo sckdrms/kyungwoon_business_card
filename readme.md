@@ -14,3 +14,14 @@ semver versioning
 
 * 0.2.0 / 2024-05-11 / 김창근
   - react.js의 react-router-dom을 사용하여 route기능 추가
+
+* 0.3.0 / 2024-05-11 / 정진우
+  - 로컬 데이터베이스 생성 및 서버와의 연동
+  - dotenv 데이터 베이스 환경 변수 추가
+  - 회원가입 기능 추가
+  - 로그인 기능 추가
+  - bcrypt을 사용하여 hashing기능 추가
+  - express-session을 사용하여 session기능 추가
+
+* 0.3.1 / 2024-05-11 / 정진우
+  - .env 경로를 찾지못하는 문제를 dotenv.config()에 옵션을 추가하여 .env 파일의 경로를 명시적으로 지정하여 해결

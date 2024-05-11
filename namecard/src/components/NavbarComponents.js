@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from './AuthContext.js';
 
 import '../css/NavbarComponents.css';
 import logo from '../img/logo.png';
 
 const NavbarComponent = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+  const { auth, logout } = useAuth();
+
 
 
   function toggleSidebar() {
@@ -29,7 +32,17 @@ const NavbarComponent = () => {
         <li className='hideOnMobile'><Link to="/">Home</Link></li>
         <li className='hideOnMobile'><Link to="/road">Infomation</Link></li>
         <li className='hideOnMobile'><Link to="/main">About Us</Link></li>
-        <li className='hideOnMobile'><button className='loginbutton1'><Link to="/login">Log In</Link></button></li>
+        {auth.isLoggedIn && <li className='loginli'>{auth.username}님</li>} {/* Here we display the username */}
+        <li>
+          {auth.isLoggedIn ? (
+            <button className='loginbutton1' onClick={() => {
+              logout();
+              alert('로그아웃 하였습니다.');
+            }}>Log out</button>
+          ) : (
+            <button className='loginbutton1'> <Link to="/login">Log in</Link></button>
+          )}
+        </li>
         <li className='hideOnPC' onClick={toggleSidebar}><a href="#"><svg style={{margin :'-10px 0px'}} xmlns="http://www.w3.org/2000/svg" fill='white' height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
       </ul>
     </nav>
