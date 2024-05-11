@@ -13,3 +13,6 @@ commenting
 * 2 / 2024-05-11 / 김창근
   - react-router-dom을 사용하여 route기능 구현
   - login, signin 페이지 추가
+
+* 3 / 2024-05-11 / 정진우
+  - login 페이지 수정

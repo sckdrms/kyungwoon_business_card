@@ -1,4 +1,4 @@
-// Server.
+// server.js
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 const bcrypt = require('bcrypt');
@@ -8,18 +8,45 @@ const mysql = require('mysql2');
 const session = require('express-session');
 const app = express();
 
-app.use(bodyParser.json());
-// 환경 변수에서 데이터베이스 설정 가져오기
+
+// 창근 로컬
+const DB_CONFIG = require('./key');
 const pool = mysql.createPool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_DATABASE,
-  port: parseInt(process.env.DB_PORT),
+  ...DB_CONFIG,
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
 });
+
+
+
+// 진우 로컬
+// 환경 변수에서 데이터베이스 설정 가져오기
+// const pool = mysql.createPool({
+//   host: process.env.DB_HOST,
+//   user: process.env.DB_USER,
+//   password: process.env.DB_PASSWORD,
+//   database: process.env.DB_DATABASE,
+//   port: parseInt(process.env.DB_PORT),
+//   waitForConnections: true,
+//   connectionLimit: 10,
+//   queueLimit: 0
+// });
+
+
+app.use(bodyParser.json());
+// promise 기반 쿼리를 위한 pool 생성
+const promisePool = pool.promise();
+
+// 데이터베이스 연결 테스트
+promisePool.getConnection()
+  .then(connection => {
+    console.log('데이터베이스 연결 성공');
+    connection.release(); // 연결 해제
+  })
+  .catch(err => {
+    console.error('데이터베이스 연결 실패:', err.message);
+  });
 
 const buildPath = path.join(__dirname, 'namecard/build');
 app.use(express.static(buildPath));
@@ -35,9 +62,6 @@ app.use(session({
     maxAge: 1000 * 60 * 60    // 쿠키의 최대 유효 시간 (1시간)
   }
 }));
-
-// promise 기반 쿼리를 위한 pool 생성
-const promisePool = pool.promise();
 
 app.post('/register', async (req, res) => {
   const { name, title, email, password, phone } = req.body;
@@ -82,7 +106,7 @@ app.post('/login', async (req, res) => {
         req.session.userId = user.user_ID;  // 세션에 사용자 ID 저장
         res.json({ success: true, message: '로그인 완료', username: user.user_NAME });
       } else {
-        res.status(401).json({ message: 'ID 또는아이디(로그인 전용 아이디) 또는 비밀번호를 잘못 입력했습니다.입력하신 내용을 다시 확인해주세요. 패스워드를 다시 확인하세요' });
+        res.status(401).json({ message: 'ID 또는아이디(로그인 전용 아이디) 또는 비밀번호를 잘못 입력했습니다. 입력하신 내용을 다시 확인해주세요. 패스워드를 다시 확인하세요' });
       }
     }
   } catch (error) {
@@ -105,13 +129,8 @@ app.listen(3000, () => {
     console.log('http://localhost:3000 에서 서버 실행중')
 })
 
-// app.use(express.static(__dirname + '/build'))
 app.use(express.static(path.join(__dirname, 'namecard', 'build')));
 
-app.get('/', (요청, 응답) => {
-  응답.sendFile(path.join(__dirname, 'build', 'namecard', 'index.html'));
-}) 
-
-
-
-
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'namecard', 'build', 'index.html'));
+});

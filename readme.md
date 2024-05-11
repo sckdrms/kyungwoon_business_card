@@ -3,7 +3,7 @@
 
 
 * server npm install list
-  - npm install express mysql mysql2 cookie-parser express-session bcrypt
+  - npm install express mysql mysql2 cookie-parser express-session bcrypt dotenv
 
 
 * * *
