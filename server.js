@@ -1,11 +1,11 @@
-// Server.js
+// Server.
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 const bcrypt = require('bcrypt');
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
-const path = require('path');
 const session = require('express-session');
-require('dotenv').config(); // 환경 변수 로드
 const app = express();
 
 app.use(bodyParser.json());
@@ -15,7 +15,7 @@ const pool = mysql.createPool({
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
-  port: process.env.DB_PORT,
+  port: parseInt(process.env.DB_PORT),
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
