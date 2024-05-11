@@ -24,4 +24,4 @@ semver versioning
   - express-session을 사용하여 session기능 추가
 
 * 0.3.1 / 2024-05-11 / 정진우
-- .env 경로를 찾지못하는 문제를 dotenv.config()에 옵션을 추가하여 .env 파일의 경로를 명시적으로 지정하여 해결
+  - .env 경로를 찾지못하는 문제를 dotenv.config()에 옵션을 추가하여 .env 파일의 경로를 명시적으로 지정하여 해결
