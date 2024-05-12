@@ -10,9 +10,24 @@ const app = express();
 
 
 // 창근 로컬
-const DB_CONFIG = require('./key');
+// const DB_CONFIG = require('./key');
+// const pool = mysql.createPool({
+//   ...DB_CONFIG,
+//   waitForConnections: true,
+//   connectionLimit: 10,
+//   queueLimit: 0
+// });
+
+
+
+// 진우 로컬
+// 환경 변수에서 데이터베이스 설정 가져오기
 const pool = mysql.createPool({
-  ...DB_CONFIG,
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_DATABASE,
+  port: parseInt(process.env.DB_PORT),
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
@@ -20,21 +35,8 @@ const pool = mysql.createPool({
 
 
 
-// 진우 로컬
-// 환경 변수에서 데이터베이스 설정 가져오기
-// const pool = mysql.createPool({
-//   host: process.env.DB_HOST,
-//   user: process.env.DB_USER,
-//   password: process.env.DB_PASSWORD,
-//   database: process.env.DB_DATABASE,
-//   port: parseInt(process.env.DB_PORT),
-//   waitForConnections: true,
-//   connectionLimit: 10,
-//   queueLimit: 0
-// });
-
-
 app.use(bodyParser.json());
+
 // promise 기반 쿼리를 위한 pool 생성
 const promisePool = pool.promise();
 
