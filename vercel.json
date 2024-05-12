@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "namecard/package.json",
-      "use": "@vercel/static-build",
+      "use": "@vercel/static-build"
     },
     {
       "src": "server.js",
@@ -17,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "namecard/build/$1"
+      "dest": "/namecard/build/$1"
     }
   ]
 }
