@@ -4,7 +4,7 @@ const DB_CONFIG = {
   host: 'localhost',
   user: 'root',
   password: '',
-  database: '',
+  database: 'namecard',
   port: 
 };
 module.exports = DB_CONFIG;
