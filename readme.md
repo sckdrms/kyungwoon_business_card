@@ -1,6 +1,19 @@
 ![image001](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/4b6d97f5-7f1a-487a-8e28-b1490cab60aa)
 
 
+* 기본 수행 목표
+  - ~~DateBase 연동(MySQL or MongoDB)~~ ▶ MySQL 사용
+  - ~~쿠키&세션 활용~~ ▶ Login 구현
+  - ~~Pug 또는 Nunjucks를 활용한 웹 꾸미기~~
+  - ~~Login 구현~~
+  - ~~Route 구현~~ ▶ react-router-dom 사용
+
+* 추가 수행 목표
+  - ~~React.js 사용~~
+  - ~~Sember 버저닝~~
+  - ~~OAUTH 상태관리~~
+  - ~~Dotenv 사용~~
+  - ~~SQL Ingection 보안~~
 
 * server npm install list
   - npm install express mysql mysql2 cookie-parser express-session bcrypt dotenv
