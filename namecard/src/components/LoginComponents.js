@@ -26,11 +26,11 @@ const LoginComponent = () => {
       });
       const data = await response.json();
       if (data.success) {
-        login(data.username);
-        alert(`환영합니다 ${data.username}님`); // 사용자 ID를 알림 메시지에 포함
-        navigate('/'); // 로그인 성공 후 메인 페이지로 리디렉션
+        alert(`${data.username}님 환영합니다 `);
+        login(data.username, data.usertitle, data.useremail, data.userphone); // 상태 업데이트
+        navigate('/');
       } else {
-        alert('로그인 실패: ' + data.message); // 실패 시 메시지 알림
+        alert('로그인 실패: ' + data.message);
       }
     } catch (error) {
       alert('로그인 요청에 실패했습니다: ' + error.message); // 네트워크 에러 처리

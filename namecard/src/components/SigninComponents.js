@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from './AuthContext';
 
 import '../css/Login&SigninComponents.css';
 
@@ -13,17 +14,16 @@ const SigninComponent = () => {
     password: '',
     phone: ''
   });
-  const navigate = useNavigate(); // useNavigate 훅을 사용하여 navigate 함수 초기화
+  const { login } = useAuth();
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent the default form submission
-    // Perform frontend validation if necessary (example: check if all fields are filled)
+    e.preventDefault();
     if (validateForm(formData)) {
-      // Send data to the server
       const response = await fetch('/register', {
         method: 'POST',
         headers: {
@@ -34,12 +34,13 @@ const SigninComponent = () => {
       const data = await response.json();
       if (data.success) {
         alert(data.message);
-        navigate('/login'); // 성공 시 메인 페이지(`/`)로 리디렉션
+        login(formData.name, formData.title, formData.email, formData.phone);
+        navigate('/login');
       } else {
         alert('회원가입 실패: ' + data.message);
       }
     } else {
-      alert('Please fill in all required fields.');
+      alert('모든 필드를 입력해 주세요.');
     }
   };
 
@@ -80,7 +81,5 @@ const SigninComponent = () => {
     </div>
   );  
 };
-
-
 
 export default SigninComponent;

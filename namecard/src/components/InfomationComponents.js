@@ -6,7 +6,7 @@ import '../css/InfomationComponents.css';
 const InfomationComponent = () => {
   return (
     <div className='information-bg'>
-      <div>asdasd</div>
+      <div>인포메이션 추가할거지렁</div>
     </div>
   );
 };

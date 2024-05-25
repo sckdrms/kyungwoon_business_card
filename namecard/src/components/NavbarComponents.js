@@ -11,8 +11,6 @@ const NavbarComponent = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const { auth, logout } = useAuth();
 
-
-
   function toggleSidebar() {
     setIsSidebarVisible(!isSidebarVisible);
   }
@@ -25,18 +23,16 @@ const NavbarComponent = () => {
 
       <ul className={`sidebar ${isSidebarVisible ? '' : 'hidden'}`}>
         <li onClick={toggleSidebar}><a href="/#"><svg style={{margin :'0px 49vw'}} xmlns="http://www.w3.org/2000/svg" fill='white' height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-        <li onClick={toggleSidebar}><Link to="/main">main테스트</Link></li>
         <li onClick={toggleSidebar}><Link to="/">Home</Link></li>
         <li onClick={toggleSidebar}><Link to="/Infomation">Infomation</Link></li>
         <li onClick={toggleSidebar}><Link to="/namecard">namecard</Link></li>
       </ul>
 
       <ul>
-        <li className='hideOnMobile'><Link to="/main">main테스트</Link></li>
         <li className='hideOnMobile'><Link to="/">Home</Link></li>
         <li className='hideOnMobile'><Link to="/Infomation">Infomation</Link></li>
         <li className='hideOnMobile'><Link to="/namecard">namecard</Link></li>
-        {auth.isLoggedIn && <li className='loginli'>{auth.username}님</li>} {/* Here we display the username */}
+        {auth.isLoggedIn && <li className='loginli'>{auth.username}님</li>}
         <li>
           {auth.isLoggedIn ? (
             <button className='loginbutton1' onClick={() => {

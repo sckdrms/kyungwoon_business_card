@@ -108,9 +108,9 @@ app.post('/login', async (req, res) => {
       const isValid = await bcrypt.compare(password, user.user_PW);
       if (isValid) {
         req.session.userId = user.user_ID;  // 세션에 사용자 ID 저장
-        res.json({ success: true, message: '로그인 완료', username: user.user_NAME });
+        res.json({ success: true, message: '로그인 완료', username: user.user_NAME, usertitle: user.user_TITLE, useremail: user.user_ID, userphone: user.user_PH });
       } else {
-        res.status(401).json({ message: 'ID 또는아이디(로그인 전용 아이디) 또는 비밀번호를 잘못 입력했습니다. 입력하신 내용을 다시 확인해주세요. 패스워드를 다시 확인하세요' });
+        res.status(401).json({ message: 'ID 또는 비밀번호를 잘못 입력했습니다. 입력하신 내용을 다시 확인해주세요.' });
       }
     }
   } catch (error) {
@@ -118,6 +118,7 @@ app.post('/login', async (req, res) => {
     res.status(500).send('Error logging in');
   }
 });
+
 
 // 로그아웃 API
 app.get('/logout', (req, res) => {

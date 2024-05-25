@@ -25,3 +25,7 @@ semver versioning
 
 * 0.3.1 / 2024-05-11 / 정진우 
   - .env 경로를 찾지못하는 문제를 dotenv.config()에 옵션을 추가하여 .env 파일의 경로를 명시적으로 지정하여 해결
+
+* 0.4.0 / 2024-05-25 / 김창근 
+  - 로그인 시 ID부분을 email요청을 동하여 sql injection 차단
+  - 로그인 했을 때 namecard에 정보기입 기능 추가

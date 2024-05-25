@@ -16,6 +16,8 @@ nav{
 .nav-container{
   padding-left: 10%;
   padding-right: 10%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: solid 2.5px rgb(98, 98, 98);
 }
 
 .logo{

@@ -6,14 +6,14 @@ const AuthContext = createContext(null);
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
-  const [auth, setAuth] = useState({ isLoggedIn: false, username: '' });
+  const [auth, setAuth] = useState({ isLoggedIn: false, username: '', usertitle: '', useremail: '', userphone: '' });
 
-  const login = (username) => {
-    setAuth({ isLoggedIn: true, username });
+  const login = (username, usertitle, useremail, userphone) => {
+    setAuth({ isLoggedIn: true, username, usertitle, useremail, userphone });
   };
 
   const logout = () => {
-    setAuth({ isLoggedIn: false, username: '' });
+    setAuth({ isLoggedIn: false, username: '', usertitle: '', useremail: '', userphone: '' });
   };
 
   return (
