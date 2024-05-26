@@ -5,9 +5,10 @@ import SigninComponent from './components/SigninComponents';
 import LoginComponent from './components/LoginComponents';
 import InfomationComponent from './components/InfomationComponents.js';
 import NamecardComponent from './components/NamecardComponents.js';
+import PrivateRoute from './PrivateRoute.js';
 
 import { Routes, Route } from 'react-router-dom';
-import { AuthProvider } from './components/AuthContext';
+import { AuthProvider } from './components/AuthContext.js';
 
 import './App.css';
 
@@ -20,7 +21,7 @@ function App() {
           <Route path="/login" element={<LoginComponent />} />
           <Route path="/signin" element={<SigninComponent />} />
           <Route path="/Infomation" element={<InfomationComponent />} />
-          <Route path="/namecard" element={<NamecardComponent />} />
+          <Route path="/namecard" element={<PrivateRoute element={NamecardComponent} />} />
 
           {/* <Route path='*' element={<P404></P404>} /> */}
         </Routes>

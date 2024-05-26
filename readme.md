@@ -15,9 +15,10 @@
   - ~~Dotenv 사용~~
   - ~~SQL Ingection 보안~~
 
+* * *
+
 * server npm install list
   - npm install express mysql mysql2 cookie-parser express-session bcrypt dotenv
-
 
 * * *
 semver versioning
@@ -42,3 +43,9 @@ semver versioning
 * 0.4.0 / 2024-05-25 / 김창근 
   - 로그인 시 ID부분을 email요청을 동하여 sql injection 차단
   - 로그인 했을 때 namecard에 정보기입 기능 추가
+
+* 0.5.0 / 2024-05-26 / 김창근 
+  - /namecard 접근 제한 기능 추가
+  - login시 /namecard 접근권한 가능 기능 추가
+  - 세션 만료시 자동 로그아웃 기능 추가
+  - 세션 보유시 새로고침해도 로그인 정보 유지기능 추가

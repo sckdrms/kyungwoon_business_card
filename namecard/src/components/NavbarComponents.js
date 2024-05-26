@@ -37,7 +37,6 @@ const NavbarComponent = () => {
           {auth.isLoggedIn ? (
             <button className='loginbutton1' onClick={() => {
               logout();
-              alert('로그아웃 하였습니다.');
             }}>Log out</button>
           ) : (
             <button className='loginbutton1'> <Link to="/login">Log in</Link></button>

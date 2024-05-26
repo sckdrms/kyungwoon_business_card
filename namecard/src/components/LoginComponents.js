@@ -1,7 +1,7 @@
+// LoginComponents.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from './AuthContext.js';
-
 import '../css/Login&SigninComponents.css';
 
 const LoginComponent = () => {
@@ -36,25 +36,25 @@ const LoginComponent = () => {
       alert('로그인 요청에 실패했습니다: ' + error.message); // 네트워크 에러 처리
     }
   };
+
   return (
     <div className='login-bg'>
-    <form className="form" onSubmit={handleSubmit}>
-      <p className="title">Log in</p>
-      <p className="message">경운명함을 사용하기 위하여 로그인하세요.</p>
-      <label>
-        <input required type="email" className="input" name="email" value={credentials.email} onChange={handleChange} />
-        <span>ID (Email)</span>
-      </label>
-      <label>
-        <input required type="password" className="input" name="password" value={credentials.password} onChange={handleChange} />
-        <span>Password</span>
-      </label>
-
-      <button type="submit" className="submit">Log in</button>
-      <p className="signin">계정이 없다면? <Link to="/signin">Sign in</Link></p>
-    </form>
-  </div>
-);  
+      <form className="form" onSubmit={handleSubmit}>
+        <p className="title">Log in</p>
+        <p className="message">경운명함을 사용하기 위하여 로그인하세요.</p>
+        <label>
+          <input required type="email" className="input" name="email" value={credentials.email} onChange={handleChange} />
+          <span>ID (Email)</span>
+        </label>
+        <label>
+          <input required type="password" className="input" name="password" value={credentials.password} onChange={handleChange} />
+          <span>Password</span>
+        </label>
+        <button type="submit" className="submit">Log in</button>
+        <p className="signin">계정이 없다면? <Link to="/signin">Sign in</Link></p>
+      </form>
+    </div>
+  );
 };
 
 export default LoginComponent;

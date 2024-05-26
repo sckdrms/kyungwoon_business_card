@@ -63,7 +63,7 @@ app.use(session({
   cookie: {
     httpOnly: true,           // 클라이언트 측 스크립트에서 쿠키를 읽지 못하도록 설정
     secure: false,            // HTTPS를 사용하지 않는 경우 false로 설정
-    maxAge: 1000 * 60 * 60    // 쿠키의 최대 유효 시간 (1시간)
+    maxAge: 5 * 60 * 60    // 세션의 최대 유효 시간 (30초)
   }
 }));
 
@@ -102,16 +102,28 @@ app.post('/login', async (req, res) => {
   try {
     const [users] = await promisePool.query('SELECT * FROM user WHERE user_ID = ?', [email]);
     if (users.length === 0) {
-      res.status(404).send('User not found');
+      return res.status(404).send('User not found');
+    }
+    const user = users[0];
+    const isValid = await bcrypt.compare(password, user.user_PW);
+    if (isValid) {
+      // 로그인 성공 시 세션에 사용자 정보 저장
+      req.session.userId = user.user_ID;
+      req.session.username = user.user_NAME;
+      req.session.usertitle = user.user_TITLE;
+      req.session.useremail = user.user_ID;
+      req.session.userphone = user.user_PH;
+      
+      res.json({ 
+        success: true, 
+        message: '로그인 완료', 
+        username: user.user_NAME, 
+        usertitle: user.user_TITLE, 
+        useremail: user.user_ID, 
+        userphone: user.user_PH 
+      });
     } else {
-      const user = users[0];
-      const isValid = await bcrypt.compare(password, user.user_PW);
-      if (isValid) {
-        req.session.userId = user.user_ID;  // 세션에 사용자 ID 저장
-        res.json({ success: true, message: '로그인 완료', username: user.user_NAME, usertitle: user.user_TITLE, useremail: user.user_ID, userphone: user.user_PH });
-      } else {
-        res.status(401).json({ message: 'ID 또는 비밀번호를 잘못 입력했습니다. 입력하신 내용을 다시 확인해주세요.' });
-      }
+      res.status(401).json({ message: 'ID 또는 비밀번호를 잘못 입력했습니다. 입력하신 내용을 다시 확인해주세요.' });
     }
   } catch (error) {
     console.error(error);
@@ -120,15 +132,18 @@ app.post('/login', async (req, res) => {
 });
 
 
+
 // 로그아웃 API
 app.get('/logout', (req, res) => {
   req.session.destroy(err => {
     if (err) {
       return res.status(500).send('Failed to logout');
     }
+    res.clearCookie('connect.sid'); // 세션 쿠키 삭제 (기본 쿠키 이름은 connect.sid)
     res.send('Logout successful');
   });
 });
+
 
 app.listen(3000, () => {
     console.log('http://localhost:3000 에서 서버 실행중')
@@ -138,4 +153,12 @@ app.use(express.static(path.join(__dirname, 'namecard', 'build')));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'namecard', 'build', 'index.html'));
+});
+
+app.get('/check-session', (req, res) => {
+  if (req.session.userId) {
+    res.sendStatus(200);
+  } else {
+    res.sendStatus(401); // 세션이 만료된 경우
+  }
 });
