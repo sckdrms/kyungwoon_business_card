@@ -63,7 +63,7 @@ app.use(session({
   cookie: {
     httpOnly: true,           // 클라이언트 측 스크립트에서 쿠키를 읽지 못하도록 설정
     secure: false,            // HTTPS를 사용하지 않는 경우 false로 설정
-    maxAge: 5 * 60 * 60    // 세션의 최대 유효 시간 (30초)
+    maxAge: 5 * 60 * 60    // 쿠키 & 세션의 최대 유효 시간 (30초)
   }
 }));
 

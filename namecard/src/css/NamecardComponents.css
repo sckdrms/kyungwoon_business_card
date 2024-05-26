@@ -61,3 +61,24 @@
 
   z-index: 2;
 }
+
+.namecard-wrapper {
+  position: relative;
+  width: 1063px;
+  height: 591px;
+  margin: 10px; /* 외부에서 지정된 크기와 위치에 맞추기 위해 여백을 줍니다 */
+}
+
+.download-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  z-index: 3; /* 이미지와 텍스트 위에 버튼을 표시 */
+}
