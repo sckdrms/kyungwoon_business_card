@@ -3,8 +3,8 @@
 const DB_CONFIG = {
   host: 'localhost',
   user: 'root',
-  password: 'rms135971234!@#$',
+  password: '',
   database: 'namecard',
-  port: 3307
+  port: 
 };
 module.exports = DB_CONFIG;
