@@ -1,5 +1,8 @@
 ![image001](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/4b6d97f5-7f1a-487a-8e28-b1490cab60aa)
-
+* * *
+### 완성 결과
+![KYNC_김창근_학생](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/f054bf76-6d24-4287-abc1-a2bfa00d3656)
+* * *
 
 * 기본 수행 목표
   - ~~DateBase 연동(MySQL or MongoDB)~~ ▶ MySQL 사용
