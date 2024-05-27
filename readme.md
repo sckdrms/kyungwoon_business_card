@@ -18,6 +18,7 @@
 
 ## 추가 수행 목표 ✏
   - ~~React.js 사용~~
+  - ~~GitHub branch 사용한 버전관리~~
   - ~~Sember 버저닝~~
   - ~~OAUTH 상태관리~~
   - ~~Dotenv 사용~~
