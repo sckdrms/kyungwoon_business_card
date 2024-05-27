@@ -1,6 +1,7 @@
 // NamecardComponents.js
 import React from 'react';
 import { useAuth } from './AuthContext.js';
+import { Link } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 import '../css/NamecardComponents.css';
 import namecardImage from '../img/namecard-1063x591.png';
@@ -46,6 +47,7 @@ const NamecardComponent = () => {
       {auth.isLoggedIn && (
         <button onClick={handleDownload} className='download-button'>이미지 다운로드</button>
       )}
+      <button className='back-button'><Link to="/">뒤로가기</Link></button>
     </div>
   );
 };
