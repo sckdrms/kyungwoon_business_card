@@ -1,6 +1,6 @@
 ![image001](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/4b6d97f5-7f1a-487a-8e28-b1490cab60aa)
 * * *
-### 완성 결과
+# 완성 결과 👨🏻‍💻
 ![주석 2024-05-27 213648](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/8da6b76b-3681-44f7-81eb-5c4f17f8bc47)
 ![주석 2024-05-27 213722](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/36d70291-6ce9-4dda-922a-2dfd1487177e)
 ![주석 2024-05-27 213731](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/ebbddb2d-2436-4089-a19b-a8e900554e08)
@@ -9,14 +9,14 @@
 ![KYNC_김창근_학생](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/f054bf76-6d24-4287-abc1-a2bfa00d3656)
 * * *
 
-* 기본 수행 목표
+## * 기본 수행 목표 📝 
   - ~~DateBase 연동(MySQL or MongoDB)~~ ▶ MySQL 사용
   - ~~쿠키&세션 활용~~ ▶ Login 구현
   - Pug 또는 Nunjucks를 활용한 웹 꾸미기
   - ~~Login 구현~~
   - ~~Route 구현~~ ▶ react-router-dom 사용
 
-* 추가 수행 목표
+## * 추가 수행 목표 ✏
   - ~~React.js 사용~~
   - ~~Sember 버저닝~~
   - ~~OAUTH 상태관리~~
@@ -27,7 +27,7 @@
   - ~~이미지 크롭 후 사용자 맞춤 파일이름으로 저장~~
 
 * * *
-
+### npm 설치 항목 📌
 * server npm install list
   - npm install express mysql mysql2 cookie-parser express-session bcrypt dotenv
     
@@ -35,7 +35,7 @@
   - npm install html2canvas
     
 * * *
-semver versioning
+## semver versioning 📜
 
 * 0.1.0 / 2024-05-08 / 김창근
   - node.js, react.js를 사용한 기본 웹어플리케이션 업로드
