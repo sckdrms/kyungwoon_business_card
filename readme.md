@@ -9,14 +9,14 @@
 ![KYNC_김창근_학생](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/f054bf76-6d24-4287-abc1-a2bfa00d3656)
 * * *
 
-## * 기본 수행 목표 📝 
+## 기본 수행 목표 📝 
   - ~~DateBase 연동(MySQL or MongoDB)~~ ▶ MySQL 사용
   - ~~쿠키&세션 활용~~ ▶ Login 구현
-  - Pug 또는 Nunjucks를 활용한 웹 꾸미기
   - ~~Login 구현~~
   - ~~Route 구현~~ ▶ react-router-dom 사용
+  - Pug 또는 Nunjucks를 활용한 웹 꾸미기
 
-## * 추가 수행 목표 ✏
+## 추가 수행 목표 ✏
   - ~~React.js 사용~~
   - ~~Sember 버저닝~~
   - ~~OAUTH 상태관리~~
