@@ -39,8 +39,8 @@ const NamecardComponent = () => {
           <>
             <p className='namecard-name'>{auth.username}</p>
             <p className='namecard-title'>{auth.usertitle}</p>
-            <p className='namecard-email'>{auth.useremail}</p>
             <p className='namecard-phone'>{auth.userphone}</p>
+            <p className='namecard-email'>{auth.useremail}</p>
           </>
         )}
       </div>
