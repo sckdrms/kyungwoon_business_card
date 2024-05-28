@@ -4,9 +4,11 @@
 ![주석 2024-05-27 213648](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/8da6b76b-3681-44f7-81eb-5c4f17f8bc47)
 ![주석 2024-05-27 213722](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/36d70291-6ce9-4dda-922a-2dfd1487177e)
 ![주석 2024-05-27 213731](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/ebbddb2d-2436-4089-a19b-a8e900554e08)
-![주석 2024-05-27 214611](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/e0946bc5-9cfb-4806-addf-6608e3a2d56e)
-#### 실제 다운로드한 명함 이미지
-![KYNC_김창근_학생](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/f054bf76-6d24-4287-abc1-a2bfa00d3656)
+![주석 2024-05-29 000030](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/a66d6be0-ee8b-4e7b-b690-fc73a9a650ef)
+
+### 실제 다운로드한 명함 이미지 💳
+![KYNC_김창근_학생 (3)](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/d7975f9f-3452-4c37-b68b-4bc4d10fe3f9)
+
 * * *
 
 ## 기본 수행 목표 📝 
