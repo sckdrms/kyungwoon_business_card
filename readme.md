@@ -1,17 +1,16 @@
 ![image001](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/4b6d97f5-7f1a-487a-8e28-b1490cab60aa)
 * * *
-<br/>
+
 # 완성 결과 👨🏻‍💻
 ![주석 2024-05-27 213648](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/8da6b76b-3681-44f7-81eb-5c4f17f8bc47)
 ![주석 2024-05-27 213722](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/36d70291-6ce9-4dda-922a-2dfd1487177e)
 ![주석 2024-05-27 213731](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/ebbddb2d-2436-4089-a19b-a8e900554e08)
 ![주석 2024-05-29 012059](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/0b1294d7-4832-482b-8726-d8a7fe97f3b3)
-<br/>
-<br/>
+
 
 ### 실제 다운로드한 명함 이미지 💳
 ![KYNC_김창근_학생 (4)](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/868a1892-090d-4283-a1b9-a1a4f244688a)
-<br/>
+
 * * *
 
 ## 기본 수행 목표 📝 
@@ -20,7 +19,9 @@
   - ~~Login 구현~~
   - ~~Route 구현~~ ▶ react-router-dom 사용
   - Pug 또는 Nunjucks를 활용한 웹 꾸미기
+    
 <br/>
+
 ## 추가 수행 목표 ✏
   - ~~React.js 사용~~
   - ~~GitHub branch 사용한 버전관리~~
@@ -31,24 +32,33 @@
   - ~~SQL Ingection 보안~~
   - ~~쿠키&세션 활용~~ ▶ Login 구현 + 세션 만료 시 자동 로그아웃
   - ~~이미지 크롭 후 사용자 맞춤 파일이름으로 저장~~
+    
 <br/>
+
 * * *
 ### npm 설치 항목 📌
 * server npm install list
   - npm install express mysql mysql2 cookie-parser express-session bcrypt dotenv
+    
 <br/>
+
 * client npm install list
   - npm install html2canvas
+    
 <br/>
+
 * * *
 ## semver versioning 📜
+
 <br/>
+
 * 0.1.0 / 2024-05-08 / 김창근
   - node.js, react.js를 사용한 기본 웹어플리케이션 업로드
 <br/>
 
 * 0.2.0 / 2024-05-11 / 김창근
   - react.js의 react-router-dom을 사용하여 route기능 추가
+    
 <br/>
 
 * 0.3.0 / 2024-05-11 / 정진우
@@ -58,6 +68,7 @@
   - 로그인 기능 추가
   - bcrypt을 사용하여 hashing기능 추가
   - express-session을 사용하여 session기능 추가
+    
 <br/>
 
 * 0.3.1 / 2024-05-11 / 정진우 
