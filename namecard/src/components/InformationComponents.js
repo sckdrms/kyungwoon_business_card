@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import '../css/InfomationComponents.css';
 
-const InfomationComponent = () => {
+const InformationComponent = () => {
   return (
     <div className='information-bg'>
       <div>인포메이션 추가할거지렁</div>
@@ -11,4 +11,4 @@ const InfomationComponent = () => {
   );
 };
 
-export default InfomationComponent;
+export default InformationComponent;

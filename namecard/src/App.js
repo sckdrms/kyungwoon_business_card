@@ -3,7 +3,7 @@
 import MainComponent from './components/MainComponents';
 import SigninComponent from './components/SigninComponents';
 import LoginComponent from './components/LoginComponents';
-import InfomationComponent from './components/InfomationComponents.js';
+import InformationComponent from './components/InformationComponents.js';
 import NamecardComponent from './components/NamecardComponents.js';
 import PrivateRoute from './PrivateRoute.js';
 
@@ -20,7 +20,7 @@ function App() {
           <Route path='/' element={ <MainComponent/> }></Route>
           <Route path="/login" element={<LoginComponent />} />
           <Route path="/signin" element={<SigninComponent />} />
-          <Route path="/Infomation" element={<InfomationComponent />} />
+          <Route path="/Information" element={<InformationComponent />} />
           <Route path="/namecard" element={<PrivateRoute element={NamecardComponent} />} />
 
           {/* <Route path='*' element={<P404></P404>} /> */}
