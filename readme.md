@@ -1,6 +1,12 @@
 ![image001](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/4b6d97f5-7f1a-487a-8e28-b1490cab60aa)
 * * *
 
+# 시스템 구성도 및 사용기술 🖥
+![pre1 psd](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/60f537f4-dc84-49b6-ab78-7a4344924b8d)
+![usepre1](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/2ceecf0c-959f-42bf-8a45-3e16b8a69518)
+
+* * *
+
 # 완성 결과 👨🏻‍💻
 ![주석 2024-06-03 140020](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/8e1b8cf4-cc05-4602-8dc9-50ce72b14b7c)
 ![주석 2024-05-27 213722](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/36d70291-6ce9-4dda-922a-2dfd1487177e)
