@@ -43,7 +43,7 @@
 <br/>
 
 * client npm install list
-  - npm install html2canvas
+  - npm install html2canvas three @types/three @react-three/fiber shadergradient framer-motion
     
 <br/>
 
