@@ -2,8 +2,8 @@
 * * *
 
 # 시스템 구성도 및 사용기술 🖥
-![pre1 psd](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/60f537f4-dc84-49b6-ab78-7a4344924b8d)
-![usepre1](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/2ceecf0c-959f-42bf-8a45-3e16b8a69518)
+![pre1bg](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/22d1f928-810e-4dd1-a5c3-48754dd7dc49)
+![usepre1bg](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/cdbbddf8-5fec-43b3-be06-6106b305e8cd)
 
 * * *
 
