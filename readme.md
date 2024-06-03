@@ -2,7 +2,7 @@
 * * *
 
 # 완성 결과 👨🏻‍💻
-![주석 2024-05-27 213648](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/8da6b76b-3681-44f7-81eb-5c4f17f8bc47)
+![주석 2024-06-03 140020](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/8e1b8cf4-cc05-4602-8dc9-50ce72b14b7c)
 ![주석 2024-05-27 213722](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/36d70291-6ce9-4dda-922a-2dfd1487177e)
 ![주석 2024-05-27 213731](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/ebbddb2d-2436-4089-a19b-a8e900554e08)
 ![주석 2024-05-29 012059](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/0b1294d7-4832-482b-8726-d8a7fe97f3b3)
