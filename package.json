@@ -19,12 +19,10 @@
     "mysql": "^2.18.1",
     "mysql2": "^3.9.7",
     "vercel": "^34.1.11",
-    "three": "0.154.0",
-    "shadergradient": "1.2.14",
-    "@monogrid/gainmap-js": "^3.0.5",
-    "@react-three/drei": "^9.106.0"
+    "three": "^0.165.0",
+    "@monogrid/gainmap-js": "^3.0.5"
   },
   "resolutions": {
-    "three": "0.154.0"
+    "three": "^0.165.0"
   }
 }
