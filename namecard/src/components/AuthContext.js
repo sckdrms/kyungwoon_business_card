@@ -49,7 +49,7 @@ export const AuthProvider = ({ children }) => {
       const interval = setInterval(checkSession, 5 * 1000); // 5초마다 세션 체크
       return () => clearInterval(interval);
     }
-  }, [auth.isLoggedIn]);
+  }, [auth.isLoggedIn, checkSession]); // 'checkSession' 추가
 
   return (
     <AuthContext.Provider value={{ auth, login, logout }}>
