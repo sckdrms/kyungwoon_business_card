@@ -13,7 +13,7 @@
       "use": "@vercel/node"
     }
   ],
-  "installCommand": "npm install --force",
+  "installCommand": "yarn install",
   "routes": [
     {
       "src": "/api/(.*)",
