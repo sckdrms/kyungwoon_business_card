@@ -1,5 +1,4 @@
-// AuthContext.js
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom'; // useNavigate 훅 임포트
 
 const AuthContext = createContext(null);
@@ -20,7 +19,7 @@ export const AuthProvider = ({ children }) => {
     sessionStorage.setItem('auth', JSON.stringify(authData));
   };
 
-  const logout = async () => {
+  const logout = useCallback(async () => {
     try {
       await fetch('/logout', { method: 'GET' });
       const authData = { isLoggedIn: false, username: '', usertitle: '', useremail: '', userphone: '' };
@@ -31,9 +30,9 @@ export const AuthProvider = ({ children }) => {
     } catch (error) {
       console.error('Failed to logout', error);
     }
-  };
+  }, [navigate]);
 
-  const checkSession = async () => {
+  const checkSession = useCallback(async () => {
     try {
       const response = await fetch('/check-session', { method: 'GET' });
       if (response.status === 401) {
@@ -42,7 +41,7 @@ export const AuthProvider = ({ children }) => {
     } catch (error) {
       console.error('Failed to check session', error);
     }
-  };
+  }, [logout]);
 
   useEffect(() => {
     if (auth.isLoggedIn) {
