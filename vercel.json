@@ -14,6 +14,7 @@
     }
   ],
   "installCommand": "yarn install",
+  "buildCommand": "yarn build",
   "routes": [
     {
       "src": "/api/(.*)",
