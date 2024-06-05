@@ -13,7 +13,7 @@
       "use": "@vercel/node"
     }
   ],
-  "installCommand": "yarn install --ignore-engines",
+  "installCommand": "yarn install",
   "routes": [
     {
       "src": "/api/(.*)",
