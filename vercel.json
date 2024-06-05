@@ -16,12 +16,12 @@
   "installCommand": "yarn install",
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/server.js"
+      "src": "/",
+      "dest": "/"
     },
     {
       "src": "/(.*)",
-      "dest": "namecard/build/$1"
+      "dest": "namecard/build/"
     }
   ]
 }
