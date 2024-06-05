@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "vercel": "vercel dev",
-    "install": "npm install --legacy-peer-deps"
+    "vercel": "vercel dev"
   },
   "keywords": [],
   "author": "",
@@ -20,10 +19,12 @@
     "mysql": "^2.18.1",
     "mysql2": "^3.9.7",
     "vercel": "^34.1.11",
-    "three": "^0.165.0",
-    "@monogrid/gainmap-js": "^3.0.5"
+    "three": "0.154.0",
+    "shadergradient": "1.2.14",
+    "@monogrid/gainmap-js": "^3.0.5",
+    "@react-three/drei": "^9.106.0"
   },
   "resolutions": {
-    "three": "^0.165.0"
+    "three": "0.154.0"
   }
 }
