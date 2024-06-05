@@ -5,7 +5,7 @@
       "src": "namecard/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "build"
+        "distDir": "namecard/build"
       }
     },
     {
@@ -16,12 +16,12 @@
   "installCommand": "yarn install",
   "routes": [
     {
-      "src": "/",
-      "dest": "/"
+      "src": "/api/(.*)",
+      "dest": "/server.js"
     },
     {
       "src": "/(.*)",
-      "dest": "namecard/build/"
+      "dest": "namecard/build/$1"
     }
   ]
 }
