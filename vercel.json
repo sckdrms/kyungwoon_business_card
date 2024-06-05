@@ -13,16 +13,33 @@
       "use": "@vercel/node"
     }
   ],
-  "installCommand": "yarn install",
-  "buildCommand": "yarn build",
   "routes": [
     {
       "src": "/api/(.*)",
       "dest": "/server.js"
     },
     {
+      "src": "/login",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/register",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/logout",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/check-session",
+      "dest": "/server.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "/namecard/build/$1"
     }
-  ]
+  ],
+  "installCommand": "yarn install",
+  "buildCommand": "yarn build --cwd namecard",
+  "outputDirectory": "namecard/build"
 }
