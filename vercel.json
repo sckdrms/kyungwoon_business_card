@@ -5,8 +5,7 @@
       "src": "namecard/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "build",
-        "installCommand": "npm install --legacy-peer-deps"
+        "distDir": "build"
       }
     },
     {
@@ -14,6 +13,7 @@
       "use": "@vercel/node"
     }
   ],
+  "installCommand": "npm install --legacy-peer-deps",
   "routes": [
     {
       "src": "/api/(.*)",
