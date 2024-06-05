@@ -5,7 +5,7 @@
       "src": "namecard/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "namecard/build"
+        "distDir": "build"
       }
     },
     {
