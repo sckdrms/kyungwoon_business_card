@@ -22,7 +22,7 @@
   position: absolute;
 
   font-size: 60px;
-
+  
   top: 100px;
   left: 400px;
 
@@ -95,4 +95,13 @@
   border: none;
   border-radius: 5px;
   z-index: 3; 
+}
+
+@media (max-width: 500px) {
+  .namecard-bg{
+    width: 1073px;
+    height: 100vh;
+    background-color: rgb(121, 121, 121);
+    position: relative;
+  }
 }
