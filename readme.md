@@ -15,8 +15,8 @@
 ![주석 2024-05-29 012059](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/0b1294d7-4832-482b-8726-d8a7fe97f3b3)
 
 # 완성 결과(Mobile) 👨🏻‍💻
-![localhost_3000_(iPhone XR)](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/417bedf8-706b-4778-8c2a-15e65290ef88)
-![localhost_3001_(iPhone XR)](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/01cd4b0b-df89-47c3-a8ae-88ca1acabc2c)
+<img src="https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/417bedf8-706b-4778-8c2a-15e65290ef88" width="200" height="400"/>
+<img src="https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/01cd4b0b-df89-47c3-a8ae-88ca1acabc2c" width="200" height="400"/>
 
 ### 실제 다운로드한 명함 이미지 💳
 ![KYNC_김창근_학생 (4)](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/868a1892-090d-4283-a1b9-a1a4f244688a)
