@@ -13,6 +13,10 @@
 ![주석 2024-05-27 213722](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/36d70291-6ce9-4dda-922a-2dfd1487177e)
 ![주석 2024-05-27 213731](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/ebbddb2d-2436-4089-a19b-a8e900554e08)
 ![주석 2024-05-29 012059](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/0b1294d7-4832-482b-8726-d8a7fe97f3b3)
+<img width="1081" alt="KakaoTalk_20240607_162702330" src="https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/d029f976-b94c-4817-b321-72136e486a19">
+<img width="287" alt="KakaoTalk_20240607_163848227" src="https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/3fd657e0-0551-4d5a-be19-255a911514de">
+
+
 
 # 완성 결과(Mobile) 👨🏻‍💻
 <img src="https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/417bedf8-706b-4778-8c2a-15e65290ef88" width="200" height="400"/>
