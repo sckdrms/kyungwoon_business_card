@@ -42,7 +42,7 @@ const NavbarComponent = () => {
             <button className='loginbutton1'> <Link to="/login">Log in</Link></button>
           )}
         </li>
-        <li className='hideOnPC' onClick={toggleSidebar}><a href="/"><svg style={{margin :'-10px 0px'}} xmlns="http://www.w3.org/2000/svg" fill='white' height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        <li className='hideOnPC' onClick={toggleSidebar}><svg style={{margin :'-10px 0px'}} xmlns="http://www.w3.org/2000/svg" fill='black' height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
       </ul>
     </nav>
   );

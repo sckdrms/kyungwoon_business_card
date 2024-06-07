@@ -22,3 +22,17 @@
   font-weight: 700;
   color: rgb(48, 100, 160);
 }
+
+@media (max-width: 500px) {
+  .main-ment {
+    font-size: 20px
+  }
+
+  .KYiconImage{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+  }
+}
+  

@@ -102,10 +102,38 @@ nav ul li:visited {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 500px) {
   .hideOnMobile{
     display: none;
   }
+
+  .logo{
+    width: 110px;
+  }
+
+  .nav-container{
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: rgba(255, 255, 255, 0.0);
+  }
+
+  .loginbutton1{
+    background-color: transparent;
+    color: black;
+    width: 15vw;
+    height: 6vh;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 12px;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+  }
+
+  nav ul li{
+    margin: 5px 10px;
+  }
+  
 }
 
 @media (min-width: 1024px) {
