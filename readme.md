@@ -7,12 +7,16 @@
 
 * * *
 
-# 완성 결과 👨🏻‍💻
-![주석 2024-06-03 140020](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/8e1b8cf4-cc05-4602-8dc9-50ce72b14b7c)
+# 완성 결과(PC) 👨🏻‍💻
+![주석 2024-06-07 221819](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/a7745f2c-9180-4b78-b205-4a9d9168d7ca)
+![주석 2024-06-07 221756](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/565b2403-ef47-46a7-ac3e-a02d1a2c8fa4)
 ![주석 2024-05-27 213722](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/36d70291-6ce9-4dda-922a-2dfd1487177e)
 ![주석 2024-05-27 213731](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/ebbddb2d-2436-4089-a19b-a8e900554e08)
 ![주석 2024-05-29 012059](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/0b1294d7-4832-482b-8726-d8a7fe97f3b3)
 
+# 완성 결과(Mobile) 👨🏻‍💻
+![localhost_3000_(iPhone XR)](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/417bedf8-706b-4778-8c2a-15e65290ef88)
+![localhost_3001_(iPhone XR)](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/01cd4b0b-df89-47c3-a8ae-88ca1acabc2c)
 
 ### 실제 다운로드한 명함 이미지 💳
 ![KYNC_김창근_학생 (4)](https://github.com/sckdrms/kyungwoon_business_card/assets/56631950/868a1892-090d-4283-a1b9-a1a4f244688a)
