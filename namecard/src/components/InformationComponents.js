@@ -1,6 +1,5 @@
 // InformationComponents.js
 import React, { useState } from 'react';
-import '../css/Teampic.css';
 import '../css/InfomationComponents.css';
 
 function InformationComponent({ isVisible }) {
